@@ -1,0 +1,25 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Greenrivers\Bundle\MagentoIntegrationBundle\Controller\:
+        resource: '../src/Controller'
+        public: true
+        tags: [ 'controller.service_arguments' ]
+
+    Greenrivers\Bundle\MagentoIntegrationBundle\Service\:
+        resource: '../src/Service'
+        public: true
+        tags: [ 'service.service_arguments' ]
+
+    Greenrivers\Bundle\MagentoIntegrationBundle\Installer:
+        public: true
+        arguments:
+            $bundle: "@=service('kernel').getBundle('GreenriversMagentoIntegrationBundle')"
+
+    Greenrivers\Bundle\MagentoIntegrationBundle\EventListener\DataObjectListener:
+        tags:
+            - { name: kernel.event_subscriber }
+

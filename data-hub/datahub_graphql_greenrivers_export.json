@@ -1,0 +1,202 @@
+{
+    "type": "graphql",
+    "path": "",
+    "name": "greenrivers",
+    "group": "",
+    "configuration": {
+        "general": {
+            "active": true,
+            "type": "graphql",
+            "name": "greenrivers",
+            "description": "",
+            "group": "",
+            "sqlObjectCondition": "",
+            "path": null
+        },
+        "schema": {
+            "queryEntities": {
+                "MagentoIntegrationCategory": {
+                    "id": "MagentoIntegrationCategory",
+                    "name": "MagentoIntegrationCategory",
+                    "columnConfig": {
+                        "columns": [
+                            {
+                                "attributes": {
+                                    "attribute": "isActive",
+                                    "label": "Enable Category",
+                                    "dataType": "checkbox"
+                                },
+                                "isOperator": false
+                            },
+                            {
+                                "attributes": {
+                                    "attribute": "includeInMenu",
+                                    "label": "Include in Menu",
+                                    "dataType": "checkbox"
+                                },
+                                "isOperator": false
+                            },
+                            {
+                                "attributes": {
+                                    "attribute": "name",
+                                    "label": "Category Name",
+                                    "dataType": "input"
+                                },
+                                "isOperator": false
+                            },
+                            {
+                                "attributes": {
+                                    "attribute": "parentCategoryId",
+                                    "label": "Parent Category ID",
+                                    "dataType": "input"
+                                },
+                                "isOperator": false
+                            },
+                            {
+                                "attributes": {
+                                    "attribute": "id",
+                                    "label": "id",
+                                    "dataType": "system"
+                                },
+                                "isOperator": false
+                            }
+                        ]
+                    }
+                },
+                "MagentoIntegrationProduct": {
+                    "id": "MagentoIntegrationProduct",
+                    "name": "MagentoIntegrationProduct",
+                    "columnConfig": {
+                        "columns": [
+                            {
+                                "attributes": {
+                                    "attribute": "status",
+                                    "label": "Enable Product",
+                                    "dataType": "checkbox"
+                                },
+                                "isOperator": false
+                            },
+                            {
+                                "attributes": {
+                                    "attribute": "attributeSetId",
+                                    "label": "Attribute Set ID",
+                                    "dataType": "input"
+                                },
+                                "isOperator": false
+                            },
+                            {
+                                "attributes": {
+                                    "attribute": "name",
+                                    "label": "Product Name",
+                                    "dataType": "input"
+                                },
+                                "isOperator": false
+                            },
+                            {
+                                "attributes": {
+                                    "attribute": "sku",
+                                    "label": "SKU",
+                                    "dataType": "input"
+                                },
+                                "isOperator": false
+                            },
+                            {
+                                "attributes": {
+                                    "attribute": "price",
+                                    "label": "Price",
+                                    "dataType": "numeric"
+                                },
+                                "isOperator": false
+                            },
+                            {
+                                "attributes": {
+                                    "attribute": "id",
+                                    "label": "ID",
+                                    "dataType": "system"
+                                },
+                                "isOperator": false
+                            }
+                        ]
+                    }
+                }
+            },
+            "mutationEntities": [],
+            "specialEntities": {
+                "document": {
+                    "read": false,
+                    "create": false,
+                    "update": false,
+                    "delete": false
+                },
+                "document_folder": {
+                    "read": false,
+                    "create": false,
+                    "update": false,
+                    "delete": false
+                },
+                "asset": {
+                    "read": false,
+                    "create": false,
+                    "update": false,
+                    "delete": false
+                },
+                "asset_folder": {
+                    "read": false,
+                    "create": false,
+                    "update": false,
+                    "delete": false
+                },
+                "asset_listing": {
+                    "read": false,
+                    "create": false,
+                    "update": false,
+                    "delete": false
+                },
+                "object_folder": {
+                    "read": true,
+                    "create": false,
+                    "update": false,
+                    "delete": false
+                },
+                "translation": {
+                    "read": false,
+                    "create": false,
+                    "update": false,
+                    "delete": false
+                },
+                "translation_listing": {
+                    "read": false,
+                    "create": false,
+                    "update": false,
+                    "delete": false
+                }
+            }
+        },
+        "security": {
+            "method": "datahub_apikey",
+            "apikey": [
+                "0ddf3fa9366b8ed71c9cb388b50ea843"
+            ],
+            "skipPermissionCheck": false,
+            "disableIntrospection": true
+        },
+        "workspaces": {
+            "asset": [],
+            "document": [],
+            "object": [
+                {
+                    "read": true,
+                    "cpath": "\/Greenrivers",
+                    "create": false,
+                    "update": false,
+                    "delete": false,
+                    "id": "extModel857-2"
+                }
+            ]
+        },
+        "permissions": {
+            "user": [],
+            "role": []
+        }
+    }
+}

@@ -1,0 +1,7 @@
+greenrivers_magento_integration:
+    resource: "@GreenriversMagentoIntegrationBundle/src/Controller/"
+    type:     annotation
+    prefix:   /
+    options:
+        expose: true
+

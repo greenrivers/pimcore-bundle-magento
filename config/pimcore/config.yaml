@@ -1,0 +1,9 @@
+monolog:
+    handlers:
+        magento_integration:
+            level: debug
+            type: stream
+            path: '%kernel.logs_dir%/greenrivers/magento_integration.log'
+            channels: [ 'magento_integration' ]
+    channels:
+        - magento_integration

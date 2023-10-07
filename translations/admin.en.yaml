@@ -1,0 +1,9 @@
+---
+menu_greenrivers: Greenrivers
+menu_magento_integration: Magento Integration
+magento_integration_settings: Magento Integration Settings
+general: General
+magento_url: Magento Url
+magento_token: Magento Token
+send_product_on_save: Send Product to Magento after save
+send_category_on_save: Send Category to Magento after save
